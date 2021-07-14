@@ -18,7 +18,6 @@ public class CucumberReportRunner {
 
 
     public static void generateReport() {
-
         File reportOutputDirectory = new File("target/classes/static");
         List<String> jsonFiles = new ArrayList<>();
         jsonFiles.add("target/cucumber-report.json");
@@ -32,5 +31,5 @@ public class CucumberReportRunner {
         ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration);
         reportBuilder.generateReports();
     }
-    
+
 }
